@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Régészet – a múlt nyomában</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><b>Régészet</b><a href="#abc">ABC</a><a href="#korok">Korszakok</a><a href="#helyek">Lelőhelyek</a><a href="#modszer">Módszerek</a></header>
+
+<div class="hero">
+<h1>Régészet</h1>
+<p>A múlt nyomában: a régészet az emberi történelem tárgyi emlékeit kutatja – az ásatástól a laboratóriumig.</p>
+</div>
+
+<section id="abc">
+<h2>A magyar ABC régészeti szótára</h2>
+<p class="lead">A magyar ábécé mind a 44 betűje. Kattints egy betűre, és megtudod, melyik régészeti fogalom tartozik hozzá!</p>
+<div class="abc" id="letters"></div>
+<div id="card"><span class="big">A</span><h3>ásatás</h3><p>A régészet fő módszere: a föld rétegeinek szakszerű, lépésenkénti feltárása.</p></div>
+</section>
+
+<section id="korok">
+<h2>Korszakok</h2>
+<p class="lead">A régészek a múltat tárgyak, anyagok és technológiák alapján tagolják.</p>
+<div class="tl">
+<div><b>Őskőkor (paleolitikum)</b><br>Vadászó-gyűjtögető életmód, pattintott kőeszközök, barlangi lelőhelyek.</div>
+<div><b>Újkőkor (neolitikum)</b><br>Földművelés, állattartás, állandó települések, kerámiaművesség.</div>
+<div><b>Rézkor és bronzkor</b><br>Fémek megjelenése, tellek (lakódombok), temetkezések, kereskedelmi utak.</div>
+<div><b>Vaskor</b><br>Vasfeldolgozás, kelta törzsek, erődített települések.</div>
+<div><b>Római kor</b><br>Pannónia provincia: városok, utak, katonai táborok, villák.</div>
+<div><b>Népvándorlás és honfoglalás</b><br>Gazdag sírleletek, ötvösművek, lószerszámok, fegyverek.</div>
+<div><b>Középkor</b><br>Várak, templomok, kolostorok, falusi és városi települések.</div>
+</div>
+</section>
+
+<section id="helyek">
+<h2>Magyar lelőhelyek</h2>
+<p class="lead">Néhány ismert hely, ahol a múlt a felszínre bukkant.</p>
+<div class="grid">
+<div class="box"><h3>Aquincum</h3><p>Római kori város Budapesten, romkerttel és múzeummal.</p></div>
+<div class="box"><h3>Százhalombatta</h3><p>Bronzkori tell és szabadtéri régészeti park a Duna mentén.</p></div>
+<div class="box"><h3>Visegrád</h3><p>Középkori királyi palota maradványai a Dunakanyarban.</p></div>
+<div class="box"><h3>Gorsium (Tác)</h3><p>Római kori város romjai Fejér vármegyében.</p></div>
+</div>
+</section>
+
+<section id="modszer">
+<h2>Módszerek</h2>
+<div class="grid" style="margin-top:20px">
+<div class="box"><h3>Rétegtan</h3><p>Az alsó rétegek régebbiek, a felsők újabbak – ebből adódik a relatív kormeghatározás.</p></div>
+<div class="box"><h3>Radiokarbon</h3><p>Szerves anyagok (csont, fa, szén) korát a ¹⁴C bomlása alapján határozzák meg.</p></div>
+<div class="box"><h3>Terepbejárás</h3><p>A felszínen látható leletek és terepformák alapján találják meg a lelőhelyeket.</p></div>
+<div class="box"><h3>Dokumentálás</h3><p>Rajz, fénykép és mérés: amit nem dokumentálunk, azt az ásatás el is pusztítja.</p></div>
+</div>
+</section>
+
+<footer>Készült a magyar régészet iránti szeretettel · Régészet – a múlt nyomában</footer>
+
+<script>
+const D=[
+["a","ásatás","A föld rétegeinek szakszerű, lépésenkénti feltárása."],
+["á","árok","Kutatóárok: keskeny szelvény, amellyel a régész felméri a lelőhelyet."],
+["b","balta","Csiszolt kő-, réz- vagy bronzbalta – az ősi munka- és harceszköz."],
+["c","cserép","A kerámia töredéke; a leggyakoribb lelet, a korszakok vezérfossziliája."],
+["cs","csont","Emberi és állati csontok: étkezésre, életmódra, betegségekre utalnak."],
+["d","denár","Középkori ezüstpénz; segít a rétegek keltezésében."],
+["dz","(ritka betű)","Magyar kettős betű, szó elején ritka; szóközépen pl. „madzag”: a zsinór nyoma a kerámián."],
+["dzs","dzsida","Lándzsaszerű lovas fegyver; a honfoglalás és a középkor leleteiben is előkerül."],
+["e","edény","Agyagedények: tárolásra, főzésre, szertartásra szolgáltak."],
+["é","égetett agyag","A tűz megkeményíti az agyagot – így maradnak fenn a kerámiák és a paticsok."],
+["f","fibula","Ruhakapocs, a mai biztosítótű őse; formája időrendi támpont."],
+["g","gödör","Hulladék-, tároló- vagy cölöpgödör: sötét folt a világosabb talajban."],
+["gy","gyöngy","Üveg-, borostyán- vagy kőgyöngy: ékszer és kereskedelmi áru."],
+["h","halom","Kurgán vagy sírhalom: nagy földkupac egy vagy több sír fölött."],
+["i","idol","Kis agyag- vagy kőszobrocska, kultikus tárgy a neolitikumból."],
+["í","íj","Az íj és a nyílhegyek a vadászat és a harc fontos emlékei."],
+["j","jégkorszak","A pleisztocén: ekkor élt a mamut, és a barlangokban emberi nyomok maradtak."],
+["k","kard","Bronz- és vaskardok: gyakori sírmellékletek."],
+["l","lelet","Minden, amit az ásatás során a föld alól előhozunk és dokumentálunk."],
+["ly","lyukasztott kő","Fúrt kőeszköz vagy nehezék: a lyuk az ősi fúrótechnika bizonyítéka."],
+["m","múzeum","A leletek végső otthona: itt őrzik, kutatják és mutatják be őket."],
+["n","neolitikum","Az újkőkor: megjelenik a földművelés és az agyagművesség."],
+["ny","nyílhegy","Kőből, csontból vagy fémből készült: a vadászat és harc eszköze."],
+["o","obszidián","Vulkáni üveg, kiváló nyersanyag. A tokaji hegyvidék obszidiánját messzire szállították."],
+["ó","ókor","A görög–római világ kora; a klasszikus régészet kutatási területe."],
+["ö","öntőforma","Bronzöntéshez használt kő- vagy agyagforma; a fémműves-műhelyek jele."],
+["ő","őskor","Az írásbeliség előtti időszak, amelyről csak tárgyi emlékeink vannak."],
+["p","pecsét","Pecsétnyomó és pecsét: tulajdonjelző, hivatali eszköz."],
+["q","Qumran","A holt-tengeri tekercsek lelőhelye: a bibliai régészet egyik nagy felfedezése."],
+["r","réz","Az első fémek egyike; a rézkor névadója."],
+["s","sír","A régészeti források egyik legfontosabb csoportja: viselet, hit és társadalom nyoma."],
+["sz","szobor","Kő-, bronz- vagy agyagszobrok: művészet és vallás tanúi."],
+["t","temető","Sírok csoportja; a temetkezési szokásokból a társadalom is kirajzolódik."],
+["ty","(ritka betű)","Kettős betű, szó elején ritka; szóközépen pl. „atya”."],
+["u","urnasír","Hamvasztásos temetkezés: a hamvakat edényben (urnában) helyezték el."],
+["ú","út","Római kori utak: pl. a borostyánkő út, Pannónia fontos kereskedelmi útvonala."],
+["ü","üst","Bronz- vagy vasüst: lakoma- és főzőedény, gyakran kincsleletekben."],
+["ű","(ritka betű)","Szó elején ritka; szóközépen pl. „tűzhely”: a tűzhelyek a lakóházak közepe voltak."],
+["v","vár","Földvár vagy kővár: védelmi központ az őskortól a középkorig."],
+["w","Wheeler","Mortimer Wheeler: a rétegtani ásatási módszer úttörője."],
+["x","XRF","Röntgenfluoreszcencia: roncsolásmentes elemzés a tárgyak anyagösszetételéről."],
+["y","Troy","Trója: Schliemann híres ásatása – a modern régészet egyik kezdőpontja."],
+["z","zománc","Zománcozott ékszerek és fémtárgyak: a középkor és a népvándorlás ötvösművészetében."],
+["zs","zsinórdíszes kerámia","Zsinórlenyomatos díszítés – egy egész kultúra nevét adta az őskorban."]
+];
+const L=document.getElementById("letters"),C=document.getElementById("card");
+function show(i){
+  const d=D[i];
+  C.innerHTML='<span class="big">'+d[0].charAt(0).toUpperCase()+d[0].slice(1)+'</span><h3></h3><p></p>';
+  C.querySelector("h3").textContent=d[1];
+  C.querySelector("p").textContent=d[2];
+  L.querySelectorAll("button").forEach((b,j)=>b.classList.toggle("on",j===i));
+}
+D.forEach((d,i)=>{
+  const b=document.createElement("button");
+  b.textContent=d[0].charAt(0).toUpperCase()+d[0].slice(1);
+  b.onclick=()=>show(i);
+  L.appendChild(b);
+});
+show(0);
+</script>
+</body>
+</html>
